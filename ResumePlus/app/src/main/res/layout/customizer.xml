@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme" />
+
+    <TextView
+        android:id="@+id/textViewblackandwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewtwocolor"
+        android:layout_margin="20dp"
+        android:fontFamily="serif"
+        android:text="Black and White"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:background="@drawable/text_edit"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/theme1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textViewblackandwhite"
+        android:layout_alignStart="@+id/textViewblackandwhite"
+        android:layout_below="@+id/textViewblackandwhite"
+        android:layout_marginBottom="20dp"
+        android:background="#7d09cf"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Theme 1"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/theme2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewblackandwhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="#08ab18"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Theme 2"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/theme3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/textViewblackandwhite"
+        android:layout_alignRight="@+id/textViewblackandwhite"
+        android:layout_below="@+id/textViewblackandwhite"
+        android:layout_marginBottom="20dp"
+        android:background="#1dd4ce"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Theme 3"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/theme6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/theme3"
+        android:layout_alignStart="@+id/theme3"
+        android:layout_below="@+id/theme3"
+        android:background="#ce2189"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Theme 6"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/theme5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/theme2"
+        android:layout_alignStart="@+id/theme2"
+        android:layout_below="@+id/theme2"
+        android:background="#b421ce"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Theme 5"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/theme4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/theme1"
+        android:layout_alignStart="@+id/theme1"
+        android:layout_below="@+id/theme3"
+        android:layout_marginBottom="20dp"
+        android:background="#ce2121"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Theme 4"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textViewtwocolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myToolBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Resume in 2 colors"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textViewattractivestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/theme4"
+        android:layout_alignStart="@+id/theme4"
+        android:layout_below="@+id/theme4"
+        android:fontFamily="serif"
+        android:text="More Attractive Styles"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/style2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0d9dd1"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="Style 2"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_below="@+id/style1"
+        android:layout_alignLeft="@+id/style1"
+        android:layout_alignStart="@+id/style1"
+        android:layout_alignRight="@+id/style1"
+        android:layout_alignEnd="@+id/style1" />
+
+    <TextView
+        android:id="@+id/style4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/style3"
+        android:layout_alignLeft="@+id/style3"
+        android:layout_alignRight="@+id/style3"
+        android:layout_alignStart="@+id/style3"
+        android:layout_below="@+id/style3"
+        android:layout_marginBottom="5dp"
+        android:background="#0d9dd1"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="Style 4"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/style3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/style2"
+        android:layout_alignLeft="@+id/style2"
+        android:layout_alignRight="@+id/style2"
+        android:layout_alignStart="@+id/style2"
+        android:layout_below="@+id/style2"
+        android:layout_marginBottom="20dp"
+        android:background="#0d9dd1"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="Style 3"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/theme6"
+        android:layout_alignLeft="@+id/textViewattractivestyle"
+        android:layout_alignRight="@+id/theme6"
+        android:layout_alignStart="@+id/textViewattractivestyle"
+        android:layout_below="@+id/textViewattractivestyle"
+        android:layout_marginBottom="20dp"
+        android:background="#0d9dd1"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="Style 1"
+        android:textAlignment="center"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+</RelativeLayout>
+    </ScrollView>

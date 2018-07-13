@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_resume"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1a81e7"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="RESUME SAMPLES"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/r1"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_resume"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+
+        android:background="@drawable/r1" />
+
+    <ImageView
+        android:id="@+id/r2"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/r1"
+        app:srcCompat="@drawable/r2" />
+
+    <ImageView
+        android:id="@+id/r3"
+        android:layout_width="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/r1"
+        android:layout_alignStart="@+id/r1"
+        android:layout_below="@+id/r1"
+        app:srcCompat="@drawable/r3" />
+
+    <ImageView
+        android:id="@+id/r4"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/r2"
+        android:layout_alignStart="@+id/r2"
+        android:layout_alignTop="@+id/r3"
+        app:srcCompat="@drawable/r4" />
+</RelativeLayout>

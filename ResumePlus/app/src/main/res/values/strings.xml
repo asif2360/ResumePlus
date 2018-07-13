@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Resume Plus</string>
+    <string name="resume_type">Select Resume Type</string>
+    <string name="college_student">College Student</string>
+    <string name="personnel_details">Personnel Detail</string>
+    <string name="address_details">Address Detail</string>
+    <string name="educational_details">Educational Detail</string>
+    <string name="project_details">Project-1 Detail</string>
+    <string name="project_details2">Project-2 Detail</string>
+    <string name="interest_and_skills">Interest and Skills</string>
+    <string name="reference">Reference and Declaration</string>
+    <string name="customizer">Customize Your Pdf</string>
+     <string name="app_name1">Digital Signature</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_sign">Get Signature</string>
+    <string name="dialog_title">SIGN HERE</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
+</resources>

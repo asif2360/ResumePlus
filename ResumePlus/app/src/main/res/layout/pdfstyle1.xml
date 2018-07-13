@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/childi1"
+        android:layout_width="695dp"
+        android:layout_height="1024dp"
+        android:background="#d4d4d7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+        <TextView
+            android:id="@+id/name_address_container"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="#106def"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="MOHD ASIF\nComputer Science Student"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/new_oval"/>
+
+
+        <TextView
+            android:id="@+id/address_left"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/name_address_container"
+            android:layout_alignLeft="@+id/name_address_container"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/profile_photo"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:padding="4dp"
+            android:text="121,Orwara\nGorakhpur Baansi Road,  Basti\n272002, Uttar Pradesh"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:id="@+id/phone_email"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/name_address_container"
+            android:layout_alignRight="@+id/name_address_container"
+            android:layout_alignTop="@+id/address_left"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profile_photo"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="6sp"
+            android:padding="4dp"
+            android:text="7210166106\nmohdasif2360@gmail.com"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+
+        <ImageView
+
+            android:id="@+id/about_me_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/address_left"
+            android:layout_below="@+id/profile_photo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/about_me_declare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/phone_email"
+            android:layout_alignTop="@+id/about_me_photo"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/about_me_photo"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:text="\n\n"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_project"
+            android:layout_alignLeft="@+id/textView_project"
+            android:layout_alignRight="@+id/textView_project"
+            android:layout_alignStart="@+id/textView_project"
+            android:layout_alignTop="@+id/imageView_Reference"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:text="\n\n\n"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_education"
+            android:layout_alignLeft="@+id/textView_education"
+            android:layout_alignRight="@+id/textView_education"
+            android:layout_alignStart="@+id/textView_education"
+            android:layout_alignTop="@+id/imageView_Skill"
+            android:layout_centerVertical="true"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:text="\n\n\n"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_skills"
+            android:layout_alignLeft="@+id/textView_skills"
+            android:layout_alignRight="@+id/textView_skills"
+            android:layout_alignStart="@+id/textView_skills"
+            android:layout_alignTop="@+id/imageView_Project"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:text="\n\n\n\n\n\n\n\n\n\n\n"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/about_me_declare"
+            android:layout_alignLeft="@+id/about_me_declare"
+            android:layout_alignRight="@+id/about_me_declare"
+            android:layout_alignStart="@+id/about_me_declare"
+            android:layout_alignTop="@+id/imageView_education"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif"
+            tools:text="\n\n\n\n\n\n\n\n\n\n" />
+
+        <ImageView
+            android:id="@+id/imageView_education"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/about_me_photo"
+            android:layout_alignStart="@+id/about_me_photo"
+            android:layout_below="@+id/about_me_declare"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_school_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Skill"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView_education"
+            android:layout_alignStart="@+id/imageView_education"
+            android:layout_below="@+id/textView_education"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_center_focus_strong_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Project"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView_Skill"
+            android:layout_alignStart="@+id/imageView_Skill"
+            android:layout_below="@+id/textView_skills"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_folder_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Reference"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView_Project"
+            android:layout_alignStart="@+id/imageView_Project"
+            android:layout_below="@+id/textView_project"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_device_hub_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Declaration"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView_Reference"
+            android:layout_alignStart="@+id/imageView_Reference"
+            android:layout_below="@+id/textView_reference"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_assignment_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView_declaration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_reference"
+            android:layout_alignLeft="@+id/textView_reference"
+            android:layout_alignRight="@+id/textView_reference"
+            android:layout_alignStart="@+id/textView_reference"
+            android:layout_alignTop="@+id/imageView_Declaration"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:text="\n\n"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:id="@+id/date_t"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/children1"
+            android:layout_alignLeft="@+id/imageView_Declaration"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="4dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/signstyle1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_alignRight="@+id/textView_reference"
+            android:layout_alignBottom="@+id/children1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            />
+
+        <Button
+            android:id="@+id/btn_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/date_t"
+            android:layout_toLeftOf="@+id/signstyle1"
+            android:layout_toRightOf="@+id/date_t"
+            android:fontFamily="serif"
+         android:paddingBottom="8dp"
+            android:text="GENERATE PDF"
+            android:textSize="20sp"
+            android:typeface="serif"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="70dp"
+            android:background="#270993"
+            android:textColor="#FFF"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>

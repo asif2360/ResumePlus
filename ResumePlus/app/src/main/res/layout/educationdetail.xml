@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myToolBar"
+        android:layout_margin="20dp"
+        android:fontFamily="serif"
+        android:text="High School"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutinterest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/schoolname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="School Name"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutinterest1"
+        android:layout_centerVertical="true"
+        android:textColorHint="#0f3054"
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Percentage/CGPA"
+            android:inputType="numberDecimal"
+            android:typeface="sans"
+            app:theme="@style/MyToolBarTheme" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpassing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutboard"
+        android:layout_alignLeft="@+id/textInputLayoutboard"
+        android:layout_alignRight="@+id/textInputLayoutboard"
+        android:layout_alignStart="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutboard"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Board"
+            android:inputType="textCapWords"
+            app:theme="@style/MyToolBarTheme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutschool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutpassing"
+        android:layout_alignLeft="@+id/textInputLayoutpassing"
+        android:layout_alignRight="@+id/textInputLayoutpassing"
+        android:layout_alignStart="@+id/textInputLayoutpassing"
+        android:layout_below="@+id/textInputLayoutpassing"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/passing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Passing Year"
+            android:inputType="date"
+            app:theme="@style/MyToolBarTheme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewsecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutschool"
+        android:layout_margin="20dp"
+        android:fontFamily="serif"
+        android:text="Senior Secondary"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpercentage12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#0f3054"
+        android:layout_below="@+id/textViewsecondary"
+        android:layout_alignLeft="@+id/textViewsecondary"
+        android:layout_alignStart="@+id/textViewsecondary"
+        android:layout_alignRight="@+id/textInputLayoutpassing"
+        android:layout_alignEnd="@+id/textInputLayoutpassing">
+
+        <EditText
+            android:id="@+id/school12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="School Name"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayoutboard12"
+        android:layout_below="@+id/textInputLayoutpercentage12"
+        android:layout_centerVertical="true"
+        android:textColorHint="#0f3054"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:id="@+id/percentage12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Percentage"
+            android:inputType="numberDecimal"
+            android:typeface="sans"
+            app:theme="@style/MyToolBarTheme" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpassing12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutboard"
+        android:layout_alignLeft="@+id/textInputLayoutboard"
+        android:layout_alignRight="@+id/textInputLayoutboard"
+        android:layout_alignStart="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutboard12"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/board12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Board"
+            android:inputType="textCapWords"
+            app:theme="@style/MyToolBarTheme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpassing12school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutpassing12"
+        android:layout_alignLeft="@+id/textInputLayoutpassing12"
+        android:layout_alignRight="@+id/textInputLayoutpassing12"
+        android:layout_alignStart="@+id/textInputLayoutpassing12"
+        android:layout_below="@+id/textInputLayoutpassing12"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/passing12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Passing Year"
+            android:inputType="date"
+            app:theme="@style/MyToolBarTheme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#0dba5f"
+        android:fontFamily="serif"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/textInputLayoutpassing12school"
+        android:layout_alignLeft="@+id/textInputLayoutpassing12school"
+        android:layout_alignStart="@+id/textInputLayoutpassing12school"
+        android:layout_alignRight="@+id/textInputLayoutpassing12school"
+        android:layout_alignEnd="@+id/textInputLayoutpassing12school" />
+
+</RelativeLayout>
+    </ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/par"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutinterest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayoutboard"
+            android:layout_alignStart="@+id/textInputLayoutboard"
+            android:layout_below="@+id/textInputLayoutboard"
+
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Area/Village/Locality"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutinterest1"
+        android:layout_centerVertical="true"
+        android:textColorHint="#0f3054"
+        android:layout_margin="20dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:id="@+id/editTextstreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Street"
+            android:inputType="textPersonName"
+            android:typeface="sans"
+            app:theme="@style/MyToolBarTheme" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpassing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutboard"
+        android:layout_alignLeft="@+id/textInputLayoutboard"
+        android:layout_alignRight="@+id/textInputLayoutboard"
+        android:layout_alignStart="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutboard"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="text"
+            app:theme="@style/MyToolBarTheme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutpassing"
+        android:layout_margin="20dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextpincodey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Pincode"
+            android:inputType="number"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutpincode"
+        android:layout_alignLeft="@+id/textInputLayoutpincode"
+        android:layout_alignRight="@+id/textInputLayoutpincode"
+        android:layout_alignStart="@+id/textInputLayoutpincode"
+        android:layout_below="@+id/textInputLayoutpincode"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout3"
+            android:layout_alignStart="@+id/textInputLayout3"
+            android:layout_below="@+id/textInputLayout3"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="State"
+            android:inputType="text"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#0dba5f"
+        android:fontFamily="serif"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/textInputLayoutstate"
+        android:layout_alignLeft="@+id/textInputLayoutstate"
+        android:layout_alignStart="@+id/textInputLayoutstate"
+        android:layout_alignRight="@+id/textInputLayoutstate"
+        android:layout_alignEnd="@+id/textInputLayoutstate" />
+
+
+
+
+</RelativeLayout>
+
+
+    </ScrollView>
+

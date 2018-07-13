@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme" />
+
+    <TextView
+        android:id="@+id/textViewfieldofinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myToolBar"
+        android:layout_margin="20dp"
+        android:fontFamily="serif"
+        android:text="Field Of Interest"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutinterest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewfieldofinterest"
+        android:layout_alignStart="@+id/textViewfieldofinterest"
+        android:layout_alignTop="@+id/textViewfieldofinterest"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextinterest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#0f3054"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/textInputLayoutinterest1"
+        android:layout_alignStart="@+id/textInputLayoutinterest1"
+        android:layout_below="@+id/textInputLayoutinterest1"
+        android:layout_alignRight="@+id/textInputLayoutinterest1"
+        android:layout_alignEnd="@+id/textInputLayoutinterest1"
+        android:id="@+id/textInputLayoutinterest2">
+
+        <EditText
+            android:id="@+id/editTextinterest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutinterest3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#0f3054"
+        android:layout_marginBottom="20dp"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/textInputLayoutinterest2"
+        android:layout_alignStart="@+id/textInputLayoutinterest2"
+        android:layout_below="@+id/textInputLayoutinterest2"
+        android:layout_alignRight="@+id/textInputLayoutinterest2"
+        android:layout_alignEnd="@+id/textInputLayoutinterest2">
+
+        <EditText
+            android:id="@+id/editTextinterest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonexpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutinterest3"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textViewtechnicalskill"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInputLayoutinterest1"
+        android:layout_alignStart="@+id/textInputLayoutinterest1"
+        android:layout_below="@+id/imageButtonexpand"
+        android:fontFamily="serif"
+        android:text="Technical Skills"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewtechnicalskill"
+        android:layout_alignStart="@+id/textViewtechnicalskill"
+        android:layout_below="@+id/textViewtechnicalskill"
+        android:fontFamily="serif"
+        android:text="C"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewtechnicalskill"
+        android:text="C++"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutinterest1"
+        android:layout_alignRight="@+id/textInputLayoutinterest1"
+        android:layout_alignTop="@+id/checkBox2"
+        android:text="Java"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:text="Html"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_alignTop="@+id/checkBox4"
+        android:layout_centerHorizontal="true"
+        android:text="Css"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQL"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignRight="@+id/textInputLayoutinterest1"
+        android:layout_alignEnd="@+id/textInputLayoutinterest1"
+
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_below="@+id/checkBox6"
+        android:text="Android"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:fontFamily="serif"
+        android:textColor="?attr/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:typeface="serif"
+        app:theme="@style/MyToolBarTheme"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignTop="@+id/checkBox8"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8"
+        android:layout_below="@+id/checkBox8"
+        android:fontFamily="serif"
+        android:text="Specify if any other"
+        android:textColor="@color/tablayoutcolor"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_marginBottom="20dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutskills1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_alignLeft="@+id/textInputLayoutinterest1"
+        android:layout_alignStart="@+id/textInputLayoutinterest1"
+        android:layout_alignRight="@+id/textInputLayoutinterest1"
+        android:layout_alignEnd="@+id/textInputLayoutinterest1"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextskills1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutskills2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_alignEnd="@+id/textInputLayoutskills1"
+        android:layout_alignLeft="@+id/textInputLayoutskills1"
+        android:layout_alignRight="@+id/textInputLayoutskills1"
+        android:textColorHint="#0f3054"
+        android:visibility="gone"
+        android:layout_alignStart="@+id/textInputLayoutskills1"
+        android:layout_alignTop="@+id/textInputLayoutskills1"
+        android:layout_marginTop="71dp">
+
+        <EditText
+            android:id="@+id/editTextskills2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutskills3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_alignEnd="@+id/textInputLayoutskills2"
+        android:layout_alignLeft="@+id/textInputLayoutskills2"
+        android:layout_alignRight="@+id/textInputLayoutskills2"
+        android:layout_alignStart="@+id/textInputLayoutskills2"
+        android:layout_below="@+id/textInputLayoutskills2"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextskills3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutskills3"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#0dba5f"
+        android:fontFamily="serif"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/imageButton3"
+        android:layout_alignLeft="@+id/textInputLayoutinterest1"
+        android:layout_alignStart="@+id/textInputLayoutinterest1"
+        android:layout_alignRight="@+id/textInputLayoutinterest1"
+        android:layout_alignEnd="@+id/textInputLayoutinterest1"
+ />
+
+
+</RelativeLayout>
+    </ScrollView>

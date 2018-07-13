@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutinterest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayoutboard"
+            android:layout_alignStart="@+id/textInputLayoutboard"
+            android:layout_below="@+id/textInputLayoutboard"
+
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutinterest1"
+        android:layout_centerVertical="true"
+        android:textColorHint="#0f3054"
+        android:layout_margin="20dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:id="@+id/editTextlastnamee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout"
+            android:layout_alignStart="@+id/textInputLayout"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:typeface="sans"
+            app:theme="@style/MyToolBarTheme" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpassing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutboard"
+        android:layout_alignLeft="@+id/textInputLayoutboard"
+        android:layout_alignRight="@+id/textInputLayoutboard"
+        android:layout_alignStart="@+id/textInputLayoutboard"
+        android:layout_below="@+id/textInputLayoutboard"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout2"
+            android:layout_alignStart="@+id/textInputLayout2"
+            android:layout_below="@+id/textInputLayout2"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="DOB"
+            android:inputType="date"
+            app:theme="@style/MyToolBarTheme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutpassing"
+        android:layout_margin="20dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextnationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Nationality"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutpincode"
+        android:layout_alignLeft="@+id/textInputLayoutpincode"
+        android:layout_alignRight="@+id/textInputLayoutpincode"
+        android:layout_alignStart="@+id/textInputLayoutpincode"
+        android:layout_below="@+id/textInputLayoutpincode"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout3"
+            android:layout_alignStart="@+id/textInputLayout3"
+            android:layout_below="@+id/textInputLayout3"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Contact No."
+            android:inputType="phone"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutstate"
+        android:layout_alignLeft="@+id/textInputLayoutstate"
+        android:layout_alignRight="@+id/textInputLayoutstate"
+        android:layout_alignStart="@+id/textInputLayoutstate"
+        android:layout_below="@+id/textInputLayoutstate"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#0f3054">
+
+        <EditText
+            android:id="@+id/editTextemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout3"
+            android:layout_alignStart="@+id/textInputLayout3"
+            android:layout_below="@+id/textInputLayout3"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#0dba5f"
+        android:fontFamily="serif"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:layout_below="@+id/textInputLayoutemail"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/textInputLayoutemail"
+        android:layout_alignEnd="@+id/textInputLayoutemail"
+        android:layout_alignLeft="@+id/textInputLayoutemail"
+        android:layout_alignStart="@+id/textInputLayoutemail" />
+
+
+
+</RelativeLayout>
+    </ScrollView>

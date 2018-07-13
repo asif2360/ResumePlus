@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mylayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_top"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/resumplus"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:minHeight="200dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_build_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/image_top"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buildresumes" />
+
+    <ImageView
+        android:id="@+id/imageView_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/image_build_resume"
+        android:layout_alignLeft="@+id/image_build_resume"
+        android:layout_alignRight="@+id/image_build_resume"
+        android:layout_alignStart="@+id/image_build_resume"
+        android:layout_below="@+id/image_build_resume"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ressamples" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/rating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:foregroundGravity="top|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+    </ScrollView>

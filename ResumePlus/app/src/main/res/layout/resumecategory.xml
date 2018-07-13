@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myToolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/resumplus" />
+
+    <ImageView
+        android:id="@+id/coolege_student"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/colllege_student" />
+
+    <ImageView
+        android:id="@+id/graduate"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/coolege_student"
+        android:layout_alignLeft="@+id/coolege_student"
+        android:layout_alignRight="@+id/coolege_student"
+        android:layout_alignStart="@+id/coolege_student"
+        android:layout_below="@+id/coolege_student"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/graduate" />
+
+    <ImageView
+        android:id="@+id/experienced"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/graduate"
+        android:layout_alignLeft="@+id/graduate"
+        android:layout_alignRight="@+id/graduate"
+        android:layout_alignStart="@+id/graduate"
+        android:layout_below="@id/graduate"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/experienced" />
+
+
+</RelativeLayout>
+    </ScrollView>

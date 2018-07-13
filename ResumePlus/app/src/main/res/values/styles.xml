@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">#0f3054</item>
+
+    </style>
+
+    <style name="MyToolBarTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+
+
+        <item name="colorAccent">#fd0707</item>
+        <item name="colorButtonNormal">#ce0c0c</item>
+        <!--when the edittext lost the focus-->
+        <item name="colorControlNormal">#034e6e</item>
+        <!--when the edittext get focusable its base become colorcontrolactivated-->
+        <item name="colorControlActivated">#1d351d</item>
+        <item name="colorControlHighlight">#085aff</item>
+
+    </style>
+
+</resources>

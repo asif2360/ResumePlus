@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutprojecttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/toolbarcolr"
+        android:layout_below="@+id/myToolBar">
+
+        <EditText
+            android:id="@+id/editTextprojecttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Project Title"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/toolbarcolr"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="160"
+        app:errorTextAppearance="@color/theme4"
+
+
+    android:layout_alignEnd="@+id/textInputLayoutprojecttitle"
+        android:layout_alignLeft="@+id/textInputLayoutprojecttitle"
+        android:layout_alignRight="@+id/textInputLayoutprojecttitle"
+        android:layout_alignStart="@+id/textInputLayoutprojecttitle"
+        android:layout_below="@+id/textInputLayoutprojecttitle">
+
+        <EditText
+            android:id="@+id/ediTextdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:gravity="top|left"
+            android:lines="5"
+
+            app:theme="@style/MyToolBarTheme"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/toolbarcolr"
+        android:layout_below="@+id/textInputLayoutdescription"
+        android:layout_margin="20dp"
+        android:id="@+id/textInputLayouttime">
+
+        <EditText
+            android:id="@+id/edittexttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration/Time"
+            android:inputType="textPersonName"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/texiinputLayoutrole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/toolbarcolr"
+        android:layout_below="@+id/textInputLayouttime"
+        android:layout_alignEnd="@+id/textInputLayouttime"
+        android:layout_alignLeft="@+id/textInputLayouttime"
+        android:layout_alignRight="@+id/textInputLayouttime"
+        android:layout_alignStart="@+id/textInputLayouttime"
+        >
+
+        <EditText
+            android:id="@+id/edittextrole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Role"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputlayoutsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/toolbarcolr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/texiinputLayoutrole">
+
+        <EditText
+            android:id="@+id/editTextsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team Size"
+            app:theme="@style/MyToolBarTheme"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonplus"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textInputlayoutsize"
+        android:layout_below="@+id/textInputlayoutsize"
+        android:background="#3abe1d"
+        android:fontFamily="serif"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="ADD MORE"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonskip"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textInputlayoutsize"
+        android:layout_alignEnd="@+id/textInputlayoutsize"
+        android:layout_alignRight="@+id/textInputlayoutsize"
+        android:background="#f70b0b"
+        android:fontFamily="serif"
+        android:text="SKIP"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#0dba5f"
+        android:fontFamily="serif"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/buttonskip"
+        android:layout_alignLeft="@+id/buttonplus"
+
+        android:layout_alignRight="@+id/buttonskip"
+
+        />
+
+
+</RelativeLayout>
+    </ScrollView>

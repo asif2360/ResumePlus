@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/childi4"
+        android:layout_width="680dp"
+        android:layout_height="970dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/left_textview"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:background="#1b6580" />
+
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/left_textview"
+            android:layout_alignTop="@+id/left_textview"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:gravity="end"
+            android:text="MOHD  ASIF\n7210166106\nmohdasif2360@gmail.com"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/photo4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/left_textview"
+            android:layout_alignRight="@+id/left_textview"
+            android:layout_below="@+id/name4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/new_oval" />
+
+        <TextView
+            android:id="@+id/address4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/name4"
+            android:layout_alignLeft="@+id/name4"
+            android:layout_alignRight="@+id/name4"
+            android:layout_alignStart="@+id/name4"
+            android:layout_below="@+id/photo4"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="121, Orwara\nGorakhpur-Baansi Road\n272002, Uttar Pradesh"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/skill4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/address4"
+            android:layout_alignStart="@+id/address4"
+            android:layout_below="@+id/address4"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="TECHNICAL  SKILL"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/skill_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/address4"
+            android:layout_alignLeft="@+id/skill4"
+            android:layout_alignRight="@+id/address4"
+            android:layout_alignStart="@+id/skill4"
+            android:layout_below="@+id/skill4"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:padding="4dp"
+            android:text="1.\n2."
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/achievements4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/skill_detail4"
+            android:layout_alignStart="@+id/skill_detail4"
+            android:layout_below="@+id/skill_detail4"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="ACHIEVEMENTS"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/achievements_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/skill_detail4"
+            android:layout_alignLeft="@+id/achievements4"
+            android:layout_alignRight="@+id/skill_detail4"
+            android:layout_alignStart="@+id/achievements4"
+            android:layout_below="@+id/achievements4"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\n\n\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/foi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/achievements_detail4"
+            android:layout_alignStart="@+id/achievements_detail4"
+            android:layout_below="@+id/achievements_detail4"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="FIELD OF INTEREST"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/foi_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/achievements_detail4"
+            android:layout_alignLeft="@+id/foi4"
+            android:layout_alignRight="@+id/achievements_detail4"
+            android:layout_alignStart="@+id/foi4"
+            android:layout_below="@+id/foi4"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\n\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:id="@+id/about_me4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name4"
+            android:layout_marginLeft="40dp"
+            android:layout_toEndOf="@+id/left_textview"
+            android:layout_toRightOf="@+id/left_textview"
+            android:fontFamily="serif"
+            android:text="ABOUT ME"
+            android:textAlignment="center"
+            android:textColor="@color/theme4"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/about_me_detail4"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/about_me4"
+            android:layout_alignStart="@+id/about_me4"
+            android:layout_below="@+id/about_me4"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="textViewtextViewtextViewtextViewtextView\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/education4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/about_me_detail4"
+            android:layout_alignStart="@+id/about_me_detail4"
+            android:layout_below="@+id/about_me_detail4"
+            android:layout_marginTop="12dp"
+            android:fontFamily="serif"
+            android:text="EDUCATION"
+            android:textAlignment="center"
+            android:textColor="@color/theme4"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/education_detail4"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/education4"
+            android:layout_alignStart="@+id/education4"
+            android:layout_below="@+id/education4"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="TextView\n\nTextViewTextViewv\nTextViewTextView\nTextView\nTextView\n\nTextViewTextViewv\nTextViewTextView\nTextView\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/project4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/education_detail4"
+            android:layout_alignStart="@+id/education_detail4"
+            android:layout_below="@+id/education_detail4"
+            android:layout_marginTop="12dp"
+            android:fontFamily="serif"
+            android:text="PROJECT"
+            android:textColor="@color/theme4"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/project_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/education_detail4"
+            android:layout_alignLeft="@+id/project4"
+            android:layout_alignRight="@+id/education_detail4"
+            android:layout_alignStart="@+id/project4"
+            android:layout_below="@+id/project4"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="TextView\n\nTextViewTextViewv\nTextViewTextView\nTextView\nTextView\n\nTextViewTextViewv\nTextViewTextView\nTextView\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/carricular4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/foi_detail4"
+            android:layout_alignStart="@+id/foi_detail4"
+            android:layout_below="@+id/foi_detail4"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="CARRICULAR ACTIVITIES"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/carricular_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/foi_detail4"
+            android:layout_alignLeft="@+id/carricular4"
+            android:layout_alignRight="@+id/foi_detail4"
+            android:layout_alignStart="@+id/carricular4"
+            android:layout_below="@+id/carricular4"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\n\n\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/reference4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/carricular_detail4"
+            android:layout_alignStart="@+id/carricular_detail4"
+            android:layout_below="@+id/carricular_detail4"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="REFERENCE"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/reference_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/carricular_detail4"
+            android:layout_alignLeft="@+id/reference4"
+            android:layout_alignRight="@+id/carricular_detail4"
+            android:layout_alignStart="@+id/reference4"
+            android:layout_below="@+id/reference4"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\n\n\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/declaration4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/project_detail4"
+            android:layout_alignStart="@+id/project_detail4"
+            android:layout_below="@+id/project_detail4"
+            android:layout_marginTop="12dp"
+            android:fontFamily="serif"
+            android:text="DECLARATION"
+            android:textColor="@color/theme4"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/declaration4_duplicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/reference_detail4"
+            android:layout_alignStart="@+id/reference_detail4"
+            android:layout_below="@+id/reference_detail4"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="DECLARATION"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/declaration_detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/project_detail4"
+            android:layout_alignLeft="@+id/declaration4"
+            android:layout_alignRight="@+id/project_detail4"
+            android:layout_alignStart="@+id/declaration4"
+            android:layout_below="@+id/declaration4"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btn_pdf_generator"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/declaration_detail4"
+            android:layout_alignLeft="@+id/declaration_detail4"
+            android:layout_alignRight="@+id/declaration_detail4"
+            android:layout_alignStart="@+id/declaration_detail4"
+            android:layout_below="@+id/declaration_detail4"
+            android:layout_marginTop="12dp"
+            android:background="#0c74dc"
+            android:fontFamily="serif"
+            android:text="GENERATE PDF"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/declaration_detail4_duplicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/reference_detail4"
+            android:layout_alignLeft="@+id/declaration4_duplicate"
+            android:layout_alignRight="@+id/reference_detail4"
+            android:layout_alignStart="@+id/declaration4_duplicate"
+            android:layout_below="@+id/declaration4_duplicate"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\n\n\n"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>

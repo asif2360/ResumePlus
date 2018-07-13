@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolr"
+        app:theme="@style/MyToolBarTheme" />
+
+
+    <TextView
+        android:id="@+id/textViewstrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myToolBar"
+        android:fontFamily="serif"
+        android:text="Strength"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewstrength"
+        android:layout_alignStart="@+id/textViewstrength"
+        android:layout_below="@+id/textViewstrength"
+        android:layout_alignParentRight="true"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textInputLayoutstrength1">
+
+        <EditText
+            android:id="@+id/strength1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutstrength2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_alignEnd="@+id/textInputLayoutstrength1"
+        android:layout_alignLeft="@+id/textInputLayoutstrength1"
+        android:layout_alignRight="@+id/textInputLayoutstrength1"
+        android:layout_alignStart="@+id/textInputLayoutstrength1"
+        android:layout_below="@+id/textInputLayoutstrength1"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/strength2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutstrength3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_alignEnd="@+id/textInputLayoutstrength2"
+        android:layout_alignLeft="@+id/textInputLayoutstrength2"
+        android:layout_alignRight="@+id/textInputLayoutstrength2"
+        android:layout_alignStart="@+id/textInputLayoutstrength2"
+        android:layout_below="@+id/textInputLayoutstrength2"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/strength3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonstrengthexpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/textInputLayoutstrength3"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/ic_input_add"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/textViewachievements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInputLayoutstrength2"
+        android:layout_alignStart="@+id/textInputLayoutstrength2"
+        android:layout_below="@+id/imageButtonstrengthexpand"
+        android:fontFamily="serif"
+        android:text="Achievements"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutachiev1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_below="@+id/textViewachievements"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/achiev1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutachiev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/textInputLayoutachiev1"
+        android:layout_alignLeft="@+id/textInputLayoutachiev1"
+        android:layout_alignStart="@+id/textInputLayoutachiev1"
+        android:layout_alignRight="@+id/textInputLayoutachiev1"
+        android:layout_alignEnd="@+id/textInputLayoutachiev1">
+
+        <EditText
+            android:id="@+id/achiev2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutachiev3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_below="@+id/textInputLayoutachiev2"
+        android:layout_alignLeft="@+id/textInputLayoutachiev2"
+        android:layout_alignStart="@+id/textInputLayoutachiev2"
+        android:layout_alignRight="@+id/textInputLayoutachiev2"
+        android:layout_alignEnd="@+id/textInputLayoutachiev2">
+
+        <EditText
+            android:id="@+id/achiev3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonachieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutachiev3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/ic_input_add"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+
+
+    <TextView
+        android:id="@+id/textViewextracarri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonachieve"
+        android:layout_toEndOf="@+id/textInputLayoutstrength1"
+        android:layout_toRightOf="@+id/textInputLayoutstrength1"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:text="Extra Carricular Activities"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignLeft="@+id/textViewachievements"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewextracarri"
+        android:visibility="visible"
+        android:layout_marginRight="20dp"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/textViewextracarri"
+        android:layout_alignStart="@+id/textViewextracarri"
+        android:id="@+id/textInputLayoutextra1">
+
+        <EditText
+            android:id="@+id/extra1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_below="@+id/textInputLayoutextra1"
+        android:layout_alignRight="@+id/textInputLayoutextra1"
+        android:layout_alignEnd="@+id/textInputLayoutextra1"
+        android:layout_alignLeft="@+id/textInputLayoutextra1"
+        android:layout_alignStart="@+id/textInputLayoutextra1"
+        android:id="@+id/textInputLayoutextra2">
+
+        <EditText
+            android:id="@+id/extra2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        app:counterEnabled="true"
+        app:counterTextAppearance="@color/theme2"
+        app:errorEnabled="true"
+        app:counterMaxLength="48"
+        app:errorTextAppearance="@color/theme4"
+        android:layout_below="@+id/textInputLayoutextra2"
+        android:layout_alignRight="@+id/textInputLayoutextra2"
+        android:layout_alignEnd="@+id/textInputLayoutextra2"
+        android:layout_alignLeft="@+id/textInputLayoutextra2"
+        android:layout_alignStart="@+id/textInputLayoutextra2"
+        android:id="@+id/textInputLayoutextra3">
+
+        <EditText
+            android:id="@+id/extra3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3"
+            app:theme="@style/MyToolBarTheme" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonextracarricular"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutextra3"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_input_add"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0dba5f"
+        android:fontFamily="serif"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/imageButtonextracarricular"
+        android:layout_alignLeft="@+id/textInputLayoutextra1"
+        android:layout_alignStart="@+id/textInputLayoutextra1"
+        android:layout_alignRight="@+id/textInputLayoutextra1"
+        android:layout_alignEnd="@+id/textInputLayoutextra1" />
+
+</RelativeLayout>
+
+    </ScrollView>

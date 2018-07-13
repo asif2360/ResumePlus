@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myapps.resumeplus" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myresume"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/myresume"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainPage"></activity>
+        <activity android:name=".ResumeCategory"></activity>
+        <activity android:name=".MainProfile"></activity>
+        <activity android:name=".PersonnelDetail"></activity>
+        <activity android:name=".AddressDetail"></activity>
+        <activity android:name=".EducationDetail"></activity>
+        <activity android:name=".TechnicalSkills"></activity>
+        <activity android:name=".ProjectDetails"></activity>
+        <activity android:name=".Strengths"></activity>
+        <activity android:name=".Refrenced"></activity>
+        <activity android:name=".Customizer"></activity>
+        <activity android:name=".Pdf"></activity>
+        <activity android:name=".EducationDetailGraduate"></activity>
+        <activity android:name=".StrengthsGraduate"></activity>
+        <activity android:name=".PdfGraduate"></activity>
+        <activity android:name=".PdfStyle1"></activity>
+        <activity android:name=".PdfStyle3"></activity>
+        <activity android:name=".PdfStyle4"></activity>
+        <activity android:name=".Samples"></activity>
+
+
+    </application>
+
+</manifest>

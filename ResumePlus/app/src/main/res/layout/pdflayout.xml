@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/children1"
+        android:layout_width="650dp"
+        android:layout_height="870dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFF">
+
+
+        <TextView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/toolbarcolr" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/container"
+            android:layout_alignStart="@+id/container"
+            android:layout_alignTop="@+id/container"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="MOHD ASIF"
+            android:textColor="@color/whitecolor"
+            android:textSize="22sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/area_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/name"
+            android:layout_alignRight="@+id/container"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="120, Orwara"
+            android:textColor="@color/whitecolor"
+            android:textSize="22sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/container"
+            android:layout_below="@+id/name"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="7210166106"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/city_road"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mob"
+            android:layout_alignRight="@+id/container"
+            android:layout_below="@+id/area_flat"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="Basti, Gorakhpur Road"
+            android:textColor="@color/whitecolor"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/container"
+            android:layout_alignLeft="@+id/container"
+            android:layout_below="@+id/mob"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="mohdasif2360@gmail.com"
+            android:textColor="@color/whitecolor"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:id="@+id/state_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/container"
+            android:layout_alignRight="@+id/container"
+            android:layout_below="@+id/city_road"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="UP, 272002"
+            android:textColor="@color/whitecolor"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/objective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/container"
+            android:layout_alignRight="@+id/container"
+            android:layout_below="@+id/container"
+            android:layout_marginTop="15dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="OBJECTIVE"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/objective_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/objective"
+            android:layout_alignRight="@+id/objective"
+            android:layout_below="@+id/objective"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="My objective is to become a hard coded developer in the filed of app development and game development\nAlso i like to absorb latest tech and compete with global community"
+            android:textColor="#000"
+
+
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/objective_details"
+            android:layout_alignRight="@+id/objective_details"
+            android:layout_below="@+id/objective_details"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="EDUCATION"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:id="@+id/radio_high_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/education"
+            android:layout_below="@+id/education"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:text="High School"
+            android:textColor="#1230b6"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/high_school_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_high_school"
+            android:layout_alignRight="@+id/education"
+            android:layout_below="@+id/radio_high_school"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\t\t\tSARLA  INTERNATIONAL  ACADEMY\n\t\t\t9.8 CGPA\n\t\t\t2011-12\n\t\t\tCBSE BOARD "
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radio_senior_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/high_school_detail"
+            android:layout_below="@+id/high_school_detail"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:text="Senior Secondary"
+            android:textColor="#1230b6"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/senior_secondary_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_senior_secondary"
+            android:layout_alignRight="@+id/high_school_detail"
+            android:layout_below="@+id/radio_senior_secondary"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="\t\t\tUNIQUE  SCIENCE  ACADEMY\n\t\t\t82%\n\t\t\t2013-14\n\t\t\tCBSE BOARD "
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/technical_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/senior_secondary_detail"
+            android:layout_alignRight="@+id/senior_secondary_detail"
+            android:layout_below="@+id/senior_secondary_detail"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="TECHNICAL SKILLS"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/technical_skills_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/technical_skills"
+            android:layout_alignRight="@+id/technical_skills"
+            android:layout_below="@+id/technical_skills"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="1.C\t\t\t\t\t2.C++\t\t\t\t\t3.JAVA\t\t\t\t\t4.ANDROID\n5.HTML\t\t\t\t\t6.CSS\t\t\t\t\t7.JAVASCRIPT"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/project_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/technical_skills_detail"
+            android:layout_alignRight="@+id/technical_skills_detail"
+            android:layout_below="@+id/technical_skills_detail"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="PROJECT WORK"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:id="@+id/radio_project_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/project_work"
+            android:layout_below="@+id/project_work"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:text="PROJECT 1"
+            android:textColor="#ec1212"
+            android:textSize="11sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/project_1_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_project_1"
+            android:layout_alignRight="@+id/project_work"
+            android:layout_below="@+id/radio_project_1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="2sp"
+            android:text="ATM SIMULATOR\nThis app is based upon the working of general Atm's. In this app we get to learn about how to do transaction through atm\nTeam Size : 1 Person\nDuration  : 1 month\nMy Role : Developer, Designer and Coder"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/field_of_interest_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/project_work"
+            android:layout_alignRight="@+id/project_work"
+            android:layout_below="@+id/project_1_detail"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="FIELD OF INTEREST"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/field_of_interest_detal_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/field_of_interest_child1"
+            android:layout_alignRight="@+id/field_of_interest_child1"
+            android:layout_below="@+id/field_of_interest_child1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="1.Learning New Tech\n2.Developing Games\n3.Watching Comedies"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/achievements_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/field_of_interest_detal_child1"
+            android:layout_alignRight="@+id/field_of_interest_detal_child1"
+            android:layout_below="@+id/field_of_interest_detal_child1"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="ACHIEVEMENTS"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/achievements_details_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/achievements_child1"
+            android:layout_alignRight="@+id/achievements_child1"
+            android:layout_below="@+id/achievements_child1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="1.Get certified with Core Java within 3 months\n2.Develope a resume based app"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/strength_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/achievements_details_child1"
+            android:layout_alignRight="@+id/achievements_details_child1"
+            android:layout_below="@+id/achievements_details_child1"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="STRENGTH"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/strength_detail_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/strength_child1"
+            android:layout_alignRight="@+id/strength_child1"
+            android:layout_below="@+id/strength_child1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="3sp"
+            android:text="1.Get certified with Core Java within 3 months\n2.Develope a resume based app"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/children2"
+
+        android:layout_width="650dp "
+
+        android:layout_height="870dp"
+        android:layout_below="@+id/children1"
+        android:background="#FFF">
+
+
+        <Button
+            android:id="@+id/pdfgen"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/date_and_time"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/signimage"
+            android:layout_marginBottom="5dp"
+            android:text="Generate" />
+
+        <RadioButton
+            android:id="@+id/radio_project_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="PROJECT 2"
+            android:textColor="#ec1212"
+            android:textSize="11sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/project_2_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_project_2"
+
+            android:layout_below="@+id/radio_project_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="ATM SIMULATOR\nThis app is based upon the working of general Atm's. In this app we get to learn about how to do transaction through atm\nTeam Size : 1 Person\nDuration  : 1 month\nMy Role : Developer, Designer and Coder"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/field_of_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/project_2_detail"
+            android:layout_alignRight="@+id/project_2_detail"
+            android:layout_below="@+id/project_2_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="FIELD OF INTEREST"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/field_of_interest_detal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/field_of_interest"
+            android:layout_alignRight="@+id/field_of_interest"
+            android:layout_below="@+id/field_of_interest"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="1.Learning New Tech\n2.Developing Games\n3.Watching Comedies"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/field_of_interest_detal"
+            android:layout_alignRight="@+id/field_of_interest"
+            android:layout_below="@+id/field_of_interest_detal"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="ACHIEVEMENTS"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/achievements_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/achievements"
+            android:layout_alignRight="@+id/achievements"
+            android:layout_below="@+id/achievements"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="1.Get certified with Core Java within 3 months\n2.Develope a resume based app"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/achievements_details"
+            android:layout_alignRight="@+id/achievements_details"
+            android:layout_below="@+id/achievements_details"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="STRENGTH"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/strength_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/strength"
+            android:layout_alignRight="@+id/strength"
+            android:layout_below="@+id/strength"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="1.Get certified with Core Java within 3 months\n2.Develope a resume based app"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/extra_carricular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/strength_detail"
+            android:layout_alignRight="@+id/strength_detail"
+            android:layout_below="@+id/strength_detail"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="EXTRA CARRICULAR ACTIVITIES"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/extra_carricular_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/extra_carricular"
+            android:layout_alignRight="@+id/extra_carricular"
+            android:layout_below="@+id/extra_carricular"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="1.Get certified with Core Java within 3 months\n2.Develope a resume based app"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/extra_carricular_detail"
+            android:layout_alignRight="@+id/extra_carricular_detail"
+            android:layout_below="@+id/extra_carricular_detail"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="REFERENCE"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/reference_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/reference"
+            android:layout_alignRight="@+id/reference"
+            android:layout_below="@+id/reference"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Name : Amol Srivastava\nMob : 9540861649\nEmail : amolsri420@gmail.com"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/declaration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/reference_detail"
+            android:layout_alignRight="@+id/reference_detail"
+            android:layout_below="@+id/reference_detail"
+            android:layout_marginTop="13dp"
+            android:background="#1f6dff"
+            android:fontFamily="serif"
+            android:text="DECLARATION"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/declaration_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/declaration"
+            android:layout_alignRight="@+id/declaration"
+            android:layout_below="@+id/declaration"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="I hereby declared that all the information given in this resume is correct and for any type of fault i am totaly responcible for that! JOKING"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/date_and_time"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/declaration_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Date : 22/06/2017\nTime__:__:__"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/signimage"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/date_and_time"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/date_and_time"
+            android:layout_below="@+id/declaration_detail"
+            android:layout_marginRight="10dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+    </ScrollView>
+</HorizontalScrollView>
